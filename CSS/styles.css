@@ -1,0 +1,19 @@
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #594F63;
+    --main-font: 'Varela', sans-serif;
+    --secondary-font: 'Bowlby One SC', cursive;
+    font-family: var(--main-font);
+    color: 
+}
+
+body {
+    display: grid;
+}
+
+.main-nav ul {
+    list-style: none;
+    font-family: var(--secondary-font);
+
+}
