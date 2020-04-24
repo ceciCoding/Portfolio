@@ -1,19 +1,28 @@
 :root {
     box-sizing: border-box;
     margin: 0;
-    background-color: #594F63;
-    --main-font: 'Varela', sans-serif;
-    --secondary-font: 'Bowlby One SC', cursive;
+    --main-green: #699990;
+    --main-white: #FFF5FF;
+    --main-font: 'Rubik', sans-serif;
+    --secondary-font: 'Corben', cursive;
     font-family: var(--main-font);
-    color: 
+    color: var(--main-white);
+    background-color: var(--main-green);
 }
 
 body {
-    display: grid;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: grid;    
+    border: solid var(--main-white);
 }
 
 .main-nav ul {
     list-style: none;
-    font-family: var(--secondary-font);
-
+    font-family: var(--main-font);
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    display: flex;
+    font-size: 1.5rem;
 }
