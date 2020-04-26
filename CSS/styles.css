@@ -74,11 +74,17 @@ main {
     margin-left: 2rem;
 }
 
+.about-me {
+    grid-row: 1/2;
+}
+
 .social {
     grid-column: 3/4;
     display: flex;
     flex-flow: column nowrap;
-    justify-self: flex-end;
+    justify-self: center;
+    position: sticky;
+    top: 12rem;
 }
 
 .linkedin {
