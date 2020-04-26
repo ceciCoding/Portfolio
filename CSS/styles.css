@@ -4,7 +4,7 @@
     --main-green: #699990;
     --main-white: #FFF5FF;
     --main-font: 'Open Sans', sans-serif;
-    --secondary-font: 'Coustard', cursive;
+    --secondary-font: 'Coustard', serif;
     font-family: var(--main-font);
     color: var(--main-white);
     background-color: var(--main-green);
@@ -44,9 +44,6 @@ main {
 }
 
 .title {
-    font-family: var(--secondary-font);
-    font-size: 3.5rem;
-    writing-mode: sideways-lr;
     /* transform-origin: 0 0;
     transform: rotate(-90deg); */
     position: sticky;
@@ -54,7 +51,16 @@ main {
     grid-column: 1/2;
     grid-row: 1/2;
     align-self: flex-start; 
-    margin-top: .5rem;
+    margin-top: .5rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    writing-mode: sideways-lr;
 }
 
 .article {
@@ -70,8 +76,7 @@ main {
 .article p {
     grid-column: 2/3;
     line-height: 1.8rem;
-    margin: 0;
-    margin-left: 2rem;
+    margin: 0 1rem 0 2rem;
 }
 
 .about-me {
@@ -85,6 +90,7 @@ main {
     justify-self: center;
     position: sticky;
     top: 12rem;
+    margin-top: .5rem;
 }
 
 .linkedin {
