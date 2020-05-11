@@ -11,8 +11,9 @@
 }
 
 body {
-    margin: 0 1rem;
+    margin: 0 auto;
     padding: 0;
+    max-width: 90%;
 }
 
 /******************
@@ -45,7 +46,7 @@ Main Navigation Bar
 .main-nav ul:first-of-type {
     position: absolute;
     top: .5rem;
-    right: 2.2rem;   
+    right: 0; 
 } 
 
 .main-nav a {
@@ -120,7 +121,7 @@ Social Navigation Bar
     grid-column: 3/4;
     display: flex;
     flex-flow: column nowrap;
-    justify-self: center;
+    justify-self: flex-end;
     position: sticky;
     top: 12rem;
     margin-top: .5rem;
