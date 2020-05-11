@@ -136,4 +136,10 @@ main {
     float: right;
 }
 
+@media (min-width: 1700px) {
+    body{
+        max-width: 65%;
+        margin: 0 auto;
+    }
+        
 
