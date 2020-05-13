@@ -29,7 +29,7 @@ Main Navigation Bar
     height: 12rem;
     background-color: var(--main-green);
     width: 100%;
-    z-index: 10;
+    z-index: 3;
 }
 
 .main-nav ul {
