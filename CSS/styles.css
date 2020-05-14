@@ -92,6 +92,10 @@ main {
     margin-bottom: 5rem;
 }
 
+a {
+    color: inherit;
+}
+
 .about-me {
     grid-row: 1/2;
 }
