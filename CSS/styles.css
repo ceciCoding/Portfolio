@@ -96,6 +96,10 @@ a {
     color: inherit;
 }
 
+strong {
+    font-weight: 1000;
+}
+
 .about-me {
     grid-row: 1/2;
 }
@@ -156,11 +160,24 @@ Social Navigation Bar
     margin-bottom: 1.5rem;
 }
 
-
+/************
+Media queries
+*************/
 @media (min-width: 1700px) {
     body{
         max-width: 65%;
         margin: 0 auto;
     }
-}        
+}  
+
+@media (max-width: 800px) {
+    .social div {
+        width: 30px;        
+        margin-bottom: .8rem;
+    }
+
+    .title {
+        font-size: 1.6rem;
+    }
+}
 
