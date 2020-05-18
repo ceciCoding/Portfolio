@@ -14,6 +14,7 @@
     margin: 0;
     --main-green: #699990;
     --main-white: #FFF5FF;
+    --menu-speed: 0.75s;
     --main-font: 'Open Sans', sans-serif;
     --secondary-font: 'Coustard', serif;
     font-family: var(--main-font);
@@ -43,8 +44,8 @@ Main Navigation Bar
     top: 0;
     height: 12rem;
     background-color: var(--main-green);
-    width: 100%;
     z-index: 3;
+    margin-left: -2rem;
 }
 
 .main-nav ul {
@@ -57,7 +58,7 @@ Main Navigation Bar
     padding: 0;
 }
 
-.main-nav ul:first-of-type {
+.main-nav > ul:first-of-type {
     position: absolute;
     top: .5rem;
     right: 0; 
@@ -145,15 +146,14 @@ strong {
 }
 
 .project {
-    clear: both;
     display: flex;
 }
 
 .container {
     display: flex;
     flex-flow: column nowrap;
-    float: right;
-    align-items: center;    
+    align-items: center;  
+    margin-bottom: 2rem;  
 }
 
 .btn {
@@ -162,7 +162,7 @@ strong {
     border: 1px solid var(--main-white);
     padding: .7rem;
     border-radius: 25px;
-    transition: .3s linear;
+    transition: all .3s cubic-bezier(.17,.67,.52,.5);
     margin: .5rem;
     margin-top: 0;
 }
@@ -170,8 +170,13 @@ strong {
 .btn:hover {
     transform: scale(1.05);
 }
+.btn a {
+    text-decoration: none;
+}
 
-
+#menu-wraps {
+    display: none;
+}
 
 /********************
 Social Navigation Bar
@@ -227,25 +232,28 @@ Media queries
 
     .title {
         font-size: 1.6rem;
+        margin-right: 20px;
     }
 
     p {
         font-size: .9rem;
     }
 
-    .project {
-        flex-flow: column nowrap ;
-    }
-
-    /*had to put more specificity because it was being overwritten*/
-    .main-nav .desk-nav {
+    #desk-nav {
         display: none;
     }
 
     .projects img {
         transform: scale(.7);
-        margin-bottom: 0;
+    }
+
+    .btn {
         margin-top: 0;
     }
 }
 
+@media screen and (max-width: 1095px) {
+    .project {
+        flex-flow: column nowrap ;
+    }
+}

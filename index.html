@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/menu.css"> 
     <title>Cecilia Olivera - Web Developer</title>
 </head>
 <body>
@@ -13,12 +14,25 @@
             <li><a href="index.html">EN.</a></li>
             <li><a href="spanish.html">ES.</a></li>
         </ul>
-        <ul class="desk-nav">
+        <ul id="desk-nav">
             <li><a href="#about">about me &nbsp;|</a></li>
             <li><a href="#projects">&nbsp; projects &nbsp;|</a></li>
             <li>&nbsp; cv - resume &nbsp;|</li>
             <li>&nbsp; contact</li>
         </ul>
+        <div id="menu-wraps">
+            <input type="checkbox" class="toggler"/>
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <ul>
+                        <li><a href="#about">about me</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#cv">cv - resume</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </div>
+            </div>
     </nav>
     <main>
         <section class="social">
@@ -37,7 +51,7 @@
                     <img src="Images/hero.jpg" alt="picture of Cecilia Olivera, web dev">
                 </picture>
                 <p class="content-paragraph">Hi! I’m Cecilia Olivera, <strong>Frontend Developer</strong>, <strong>UX/UI</strong>  
-                enthusiast and worshiper&nbsp;of&nbsp;cats. <br> 
+                enthusiast and worshiper of&nbsp;cats. <br> 
                 In early 2019 I decided I was going to make a life-changing twist, so I embarked on the journey of 
                 software engineering and design. I had programmed when I was around 12 and the thought of it has remained 
                 at the back of my mind for all these years. I quit my job and started studying full time. I haven’t 
@@ -46,7 +60,7 @@
                 <a href="https://platzi.com/" target="_blank"> Platzi</a>, 
                 <a href="https://www.edx.org/course/cs50s-introduction-to-computer-science" target="_blank">CS50</a>, 
                 <a href="https://www.crehana.com/es/" target="_blank">Crehana,</a>  
-                <a href="https://zerotomastery.io/" target="_blank">Zero to Mastery, </a><a href="https://javascript30.com/" target="_blank">Javascript30 </a> and thousands of articles, videos and 
+                <a href="https://zerotomastery.io/" target="_blank">Zero to Mastery</a>,&nbsp;<a href="https://javascript30.com/" target="_blank"> Javascript30</a> and thousands of articles, videos and 
                 forums this great community has&nbsp;to&nbsp;offer. 
                 I’m <strong>constantly craving to learn new stuff</strong>  and it’s very important to me to <strong>understand things deeply</strong> ,so during this
                 time I’ve focused on learning <strong>computer science</strong>  foundations and having a <strong> good knowledge of Javascript and CSS. </strong> <br>
@@ -74,16 +88,12 @@
                         <img src="Images/memory.jpg" alt="90s music memory game">
                     </picture>
                     <div class="btns">
-                        <a href="https://cecicoding.github.io/90s-Music-Memory-Game/" target="_blank">
-                            <button class="btn">
-                                See Code
-                            </button>
-                        </a>
-                        <a href="https://github.com/ceciCoding/90s-Music-Memory-Game" target="_blank">
-                            <button class="btn">
-                                Live Demo
-                            </button>
-                        </a>
+                        <button class="btn">
+                            <a href="https://github.com/ceciCoding/90s-Music-Memory-Game" target="_blank">See Code</a>
+                         </button>
+                        <button class="btn">
+                            <a href="https://cecicoding.github.io/90s-Music-Memory-Game/" target="_blank">Live Demo</a>
+                        </button>
                     </div>
                 </div>
             </article>
