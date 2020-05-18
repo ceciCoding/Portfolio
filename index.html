@@ -13,7 +13,7 @@
             <li><a href="index.html">EN.</a></li>
             <li><a href="spanish.html">ES.</a></li>
         </ul>
-        <ul>
+        <ul class="desk-nav">
             <li><a href="#about">about me &nbsp;|</a></li>
             <li><a href="#projects">&nbsp; projects &nbsp;|</a></li>
             <li>&nbsp; cv - resume &nbsp;|</li>
@@ -60,20 +60,32 @@
                 <h1>Projects</h1>
             </div>
             <article class="content project" id="projects">
-                <div class="img-container">
-                    <picture>
-                        <source srcset="Images/memory-small.jpg"  media="(max-width: 750px)">
-                        <img src="Images/memory.jpg" alt="90s music memory game">
-                    </picture>
-                    <div class="overlay"></div>
-                </div>
+                <div>
                 <h3>90s Music Memory Game</h3>
                 <p class="content-paragraph">
                     This is a memory game with a UI simulating a 1990s sound system. Each card is an album I like and every time there is a match a song from that album will&nbsp;play. <br>
                     It is developed with nested grids and CSS transitions for the UI and vanilla Javascript runs in&nbsp;the&nbsp;back. <br>
                     Its deployment can be seen here and its code&nbsp;here.
-
                 </p>
+                </div>
+                <div class="container">
+                    <picture>
+                        <source srcset="Images/memory-small.jpg"  media="(max-width: 750px)">
+                        <img src="Images/memory.jpg" alt="90s music memory game">
+                    </picture>
+                    <div class="btns">
+                        <a href="https://cecicoding.github.io/90s-Music-Memory-Game/" target="_blank">
+                            <button class="btn">
+                                See Code
+                            </button>
+                        </a>
+                        <a href="https://github.com/ceciCoding/90s-Music-Memory-Game" target="_blank">
+                            <button class="btn">
+                                Live Demo
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </article>
         </section>
     </main>

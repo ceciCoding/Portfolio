@@ -29,6 +29,7 @@ body {
 
 h3 {
     margin-top: 0;
+    text-transform: uppercase;
 }
 
 /******************
@@ -139,20 +140,38 @@ strong {
 }
 
 .projects img {
+    margin: 0.5rem 1.5rem;
+    border: 1px solid var(--main-white);
+}
+
+.project {
+    clear: both;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
     float: right;
-    margin-left: 1.5rem;
+    align-items: center;    
 }
 
-.img-container {
-    position: relative;
+.btn {
+    background-color: transparent;
+    color: inherit;
+    border: 1px solid var(--main-white);
+    padding: .7rem;
+    border-radius: 25px;
+    transition: .3s linear;
+    margin: .5rem;
+    margin-top: 0;
 }
 
-.overlay {
-    position: absolute;
-    background: rgba(0,0,0,0.6);
-    width: 100%;
-    height: 100%;
+.btn:hover {
+    transform: scale(1.05);
 }
+
+
 
 /********************
 Social Navigation Bar
@@ -200,7 +219,7 @@ Media queries
     }
 }  
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .social div {
         width: 30px;        
         margin-bottom: .8rem;
@@ -212,7 +231,21 @@ Media queries
 
     p {
         font-size: .9rem;
-        text-overflow: ellipsis;
+    }
+
+    .project {
+        flex-flow: column nowrap ;
+    }
+
+    /*had to put more specificity because it was being overwritten*/
+    .main-nav .desk-nav {
+        display: none;
+    }
+
+    .projects img {
+        transform: scale(.7);
+        margin-bottom: 0;
+        margin-top: 0;
     }
 }
 
