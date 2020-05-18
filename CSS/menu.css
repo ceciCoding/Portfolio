@@ -9,7 +9,6 @@
       z-index: 5;
       width: 250px;
       height: 300px;
-      background-color: var(--main-white);
   }
 
   #menu-wraps .toggler {
@@ -21,17 +20,18 @@
       width: 50px;
       height: 50px;
       opacity: 0;
+      background-color: var(--main-green);
   }
 
   #menu-wraps .hamburger {
       position: absolute;
       top: 0;
-      left: 1rem;
+      left: 0;
       z-index: 1;
       width: 60px;
       height: 60px;
       padding: 1rem;
-      background: var(--main-white);
+      background: transparent;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -58,7 +58,6 @@
       height: 2px;
       background-color: var(--main-white);
       display: flex;
-      /*for the animation*/
       transition: all .4s ease;
   }
 
@@ -82,7 +81,7 @@
   **********/
   #menu-wraps .toggler:checked + .hamburger > div {
       transform: rotate(135deg);
-      background-color: var(--main-green);
+      background-color: var(--main-white);
   }
 
   /*Turn into X*/
@@ -95,7 +94,7 @@
   #menu-wraps .menu {
       position: fixed;
       top: 4rem;
-      left: 2rem;
+      left: 0;
       width: 100%;
       visibility: hidden;
       overflow: hidden;
@@ -104,8 +103,15 @@
   }
 
   #menu-wraps .menu > div {
-      transform: scale(0); 
-      transition: all .4s ease;
+      background: var(--main-white);
+      display: flex;
+      flex: none;
+      width: 250px;
+      height: 300px;
+      align-items: center;
+      justify-content: center;
+      transition: transform .4s ease;
+       transform: translate(-100%, 0);
   }
 
   #menu-wraps .menu > div > div {
@@ -113,17 +119,13 @@
       transition: opacity .4s ease;
   }
 
-  /* #menu-wraps .menu a {
-      transition: color 0.4s ease;
-  } */
-
   /*Show menu*/
   #menu-wraps .toggler:checked ~ .menu {
       visibility: visible;
   }
 
-  #menu-wraps .toggler:checked ~ .menu > div {
-      transform: scale(1);
+  #menu-wraps .toggler:checked ~ .menu > div  {
+      transform: scale(1); 
       transition-duration: var(--menu-speed);
   }
 

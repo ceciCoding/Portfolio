@@ -51,7 +51,6 @@ Main Navigation Bar
 .main-nav ul {
     list-style: none;
     font-family: var(--main-font);
-    /* text-transform: uppercase;  */
     display: flex;
     font-size: 1.3rem;
     position: sticky;
@@ -86,7 +85,7 @@ main {
     margin-top: .5rem; 
     margin-right: .8rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     font-family: var(--secondary-font);
     font-size: 2rem;
@@ -161,17 +160,14 @@ strong {
     color: inherit;
     border: 1px solid var(--main-white);
     padding: .7rem;
-    border-radius: 25px;
-    transition: all .3s cubic-bezier(.17,.67,.52,.5);
+    border-radius: 5px;
     margin: .5rem;
     margin-top: 0;
 }
 
-.btn:hover {
-    transform: scale(1.05);
-}
 .btn a {
     text-decoration: none;
+    font-size: .8rem;
 }
 
 #menu-wraps {
@@ -233,6 +229,8 @@ Media queries
     .title {
         font-size: 1.6rem;
         margin-right: 20px;
+        justify-content: center;
+
     }
 
     p {
@@ -248,7 +246,7 @@ Media queries
     }
 
     .btn {
-        margin-top: 0;
+        transform: translateY(-25px);
     }
 }
 
