@@ -128,7 +128,7 @@ strong {
     -webkit-clip-path: circle();
     shape-outside: circle(); 
     float: left;
-    margin: 1.5rem;
+    margin: 0 1.5rem 1.5rem 0;
 }
 
 .content-paragraph  {
@@ -139,7 +139,6 @@ strong {
 .projects img {
     margin: 0.5rem 1.5rem;
     border: 1px solid var(--main-white);
-    max-width: 100%;
 }
 
 .project {
@@ -242,6 +241,7 @@ Media queries
 
     .projects img {
         margin: 0;
+        max-width: 100%;
     }
 
     .btn {
