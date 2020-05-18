@@ -101,11 +101,8 @@ main {
     display: grid;
     grid-template-columns: 10% 90%;
     grid-template-rows: auto;
-    /* grid-gap: 1rem; */
-    /* align-items: start; */
-    /* justify-content: start; */
     line-height: 1.8rem;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 }
 
 a {
@@ -142,6 +139,7 @@ strong {
 .projects img {
     margin: 0.5rem 1.5rem;
     border: 1px solid var(--main-white);
+    max-width: 100%;
 }
 
 .project {
@@ -150,6 +148,7 @@ strong {
 
 .container {
     display: flex;
+    flex-shrink: 1;
     flex-flow: column nowrap;
     align-items: center;  
     margin-bottom: 2rem;  
@@ -227,7 +226,7 @@ Media queries
     }
 
     .title {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         margin-right: 20px;
         justify-content: center;
 
@@ -242,11 +241,11 @@ Media queries
     }
 
     .projects img {
-        transform: scale(.7);
+        margin: 0;
     }
 
     .btn {
-        transform: translateY(-25px);
+        /* transform: translateY(-25px); */
     }
 }
 
