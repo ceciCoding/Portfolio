@@ -30,7 +30,7 @@ body {
 
 h3 {
     margin-top: 0;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 /******************
@@ -121,6 +121,7 @@ strong {
     grid-column: 2/3;
     display: block;
     clear: both;
+    margin-bottom: 4rem;
 }
 
 .hero {
@@ -160,7 +161,6 @@ strong {
     padding: .7rem;
     border-radius: 5px;
     margin: .5rem;
-    margin-top: 0;
 }
 
 .btn a {
@@ -176,12 +176,12 @@ strong {
 Social Navigation Bar
 *********************/
 .social {
+    position: sticky;
+    top: 12rem;
     grid-column: 3/4;
     display: flex;
     flex-flow: column nowrap;
     justify-self: flex-end;
-    position: sticky;
-    top: 12rem;
     margin-top: .5rem;
 }
 
@@ -228,7 +228,6 @@ Media queries
         font-size: 1.3rem;
         margin-right: 20px;
         justify-content: center;
-
     }
 
     p {
@@ -242,10 +241,6 @@ Media queries
     .projects img {
         margin: 0;
         max-width: 100%;
-    }
-
-    .btn {
-        /* transform: translateY(-25px); */
     }
 }
 

@@ -4,7 +4,7 @@
   #menu-wraps {
       display: block;
       position: fixed;
-      top: 20px;
+      top: .5rem;
       left: 0;
       z-index: 5;
       width: 250px;
@@ -13,8 +13,8 @@
 
   #menu-wraps .toggler {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: .4rem;
+      left: .5rem;
       z-index: 2;
       cursor: pointer;
       width: 50px;
@@ -25,8 +25,8 @@
 
   #menu-wraps .hamburger {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: .4rem;
+      left: .5rem;
       z-index: 1;
       width: 60px;
       height: 60px;
@@ -106,12 +106,12 @@
       background: var(--main-white);
       display: flex;
       flex: none;
-      width: 250px;
+      width: 230px;
       height: 300px;
       align-items: center;
       justify-content: center;
       transition: transform .4s ease;
-       transform: translate(-100%, 0);
+      transform: translate(-100%, 0);
   }
 
   #menu-wraps .menu > div > div {
