@@ -161,10 +161,13 @@ strong {
 .btn {
     background-color: transparent;
     color: inherit;
-    border: 1px solid var(--main-white);
+    border: 2px solid var(--main-white);
     padding: .7rem;
     border-radius: 5px;
     margin: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .btn a {
@@ -182,27 +185,36 @@ Contact Form
 .cont-form {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    align-items: flex-start;
     grid-column: 2/3;
-    max-width: 80%;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 .cont-form > input,
 .cont-form textarea {
     padding: .5rem;
-    margin: 1rem;
+    margin-bottom: .5rem;
     margin-top: 0;
     background-color: transparent;
-    border: 1px solid var(--main-white);
+    border: 2px solid var(--main-white);
     border-radius: 5px;
     color: inherit;
     font-family: inherit;
+    width: 100%;
 }
 
 .cont-form label {
     font-size: .8rem;
-    color: var(--main-grey);
+    /* color: var(--main-grey); */
 }
+
+.cont-form .btn {
+    align-self: center;
+    width: 6rem;
+    font-size: .8rem;
+}
+
 
 /********************
 Social Navigation Bar
