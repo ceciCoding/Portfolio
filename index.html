@@ -18,7 +18,7 @@
             <li><a href="#about">about me &nbsp;|</a></li>
             <li><a href="#projects">&nbsp; projects &nbsp;|</a></li>
             <li><a href="#cv">&nbsp; cv - resume &nbsp;|</a></li>
-            <li>&nbsp; contact</li>
+            <li><a href="#contact">&nbsp; contact</a></li>
         </ul>
         <div id="menu-wraps">
             <input type="checkbox" class="toggler"/>
@@ -152,6 +152,21 @@
             <article class="content">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus aliquid qui tempore.</p>
             </article>
+        </section>
+        <section class="section contact" id="contact">
+            <div class="title">
+                <h1>contact</h1>
+            </div>
+                <form class="cont-form" action="POST">
+                    <label for="name" aria-placeholder="Name" placeholder="name">Name</label>
+                    <input type="text" name="name">
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="" cols="30" rows="6"></textarea>
+                    <input type="file" name="file">
+                    <button class="btn" type="submit">Send</button>
+                </form>
         </section>
     </main>
     <script src="script.js"></script>

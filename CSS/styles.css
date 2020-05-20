@@ -176,6 +176,34 @@ strong {
     display: none;
 }
 
+/************
+Contact Form
+*************/
+.cont-form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    grid-column: 2/3;
+    max-width: 80%;
+}
+
+.cont-form > input,
+.cont-form textarea {
+    padding: .5rem;
+    margin: 1rem;
+    margin-top: 0;
+    background-color: transparent;
+    border: 1px solid var(--main-white);
+    border-radius: 5px;
+    color: inherit;
+    font-family: inherit;
+}
+
+.cont-form label {
+    font-size: .8rem;
+    color: var(--main-grey);
+}
+
 /********************
 Social Navigation Bar
 *********************/
