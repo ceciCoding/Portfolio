@@ -1,12 +1,16 @@
+/***************************************
+Declaration of variables, reset of 
+tags and change box model to border-box
+****************************************/
 * {
-  box-sizing: border-box;
-  padding: 0;
-  border: 0;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
 }
 
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 :root {
@@ -79,8 +83,6 @@ main {
 }
 
 .title {
-    /* transform-origin: 0 0;
-    transform: rotate(-90deg); */
     position: sticky;
     top: 12rem;
     grid-column: 1/2;
