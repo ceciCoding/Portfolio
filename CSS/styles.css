@@ -159,9 +159,9 @@ strong {
 }
 
 .btn {
-    background-color: transparent;
+    background-color: var(--main-grey);
     color: inherit;
-    border: 2px solid var(--main-white);
+    /* border: 2px solid var(--main-white); */
     padding: .7rem;
     border-radius: 5px;
     margin: .5rem;
