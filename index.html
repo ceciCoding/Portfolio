@@ -159,14 +159,15 @@
             <div class="title">
                 <h1>contact</h1>
             </div>
-                <form class="cont-form" action="POST">
+                <form class="cont-form" action="POST" data-netflify="true">
                     <label for="name" aria-placeholder="Name" placeholder="name">Name</label>
                     <input type="text" name="name">
                     <label for="email">Email</label>
                     <input type="email" name="email">
                     <label for="message">Message</label>
                     <textarea name="message" id="" cols="30" rows="6"></textarea>
-                    <input type="file" name="file">
+                    <input type="file" name="file" placeholder="upload file">
+                    <div data-netflify-recapcha="true"></div>
                     <button class="btn" type="submit">Send</button>
                 </form>
         </section>
