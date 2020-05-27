@@ -25,11 +25,11 @@
             <div class="hamburger"><div></div></div>
             <div class="menu">
                 <div>
-                    <ul>
-                        <li><a href="#about">about me</a></li>
-                        <li><a href="#projects">projects</a></li>
-                        <li><a href="#cv">cv - resume</a></li>
-                        <li><a href="#contact">contact</a></li>
+                    <ul class="burger-list">
+                        <li><a href="#about" class="burger-list-item">about me</a></li>
+                        <li><a href="#projects" class="burger-list-item">projects</a></li>
+                        <li><a href="#cv" class="burger-list-item">cv - resume</a></li>
+                        <li><a href="#contact" class="burger-list-item">contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -59,10 +59,9 @@
                 <p>My <strong>main resources</strong>  have been <a href="https://frontendmasters.com/" target="_blank">Frontend Masters</a>, 
                 <a href="https://platzi.com/" target="_blank"> Platzi</a>, 
                 <a href="https://www.edx.org/course/cs50s-introduction-to-computer-science" target="_blank">CS50</a>, 
-                <a href="https://www.crehana.com/es/" target="_blank">Crehana,</a>  
                 <a href="https://zerotomastery.io/" target="_blank">Zero to Mastery</a>,&nbsp;<a href="https://javascript30.com/" target="_blank"> Javascript30</a> and thousands of articles, videos and 
                 forums this great community has&nbsp;to&nbsp;offer. <br>
-                I’m <strong>constantly craving to learn new stuff</strong>  and it’s very important to me to <strong>understand things deeply</strong> ,so during this
+                I’m <strong>constantly craving to learn new stuff</strong>  and it’s very important to me to <strong>understand things deeply,</strong> so during this
                 time I’ve focused on learning <strong>computer science</strong>  foundations and having a <strong> good knowledge of Javascript&nbsp;and&nbsp;CSS. </strong> <br>
                 <strong>Good practices</strong>  and <strong>accessibility</strong>  are two of my concerns&nbsp;as&nbsp;well.</p>
                 <!-- <p><strong>My goal</strong>  is to work for a company that encourages me to learn, helps me grow and cares about work ethics. I'm open to work for any time zone.</p> -->
@@ -88,12 +87,8 @@
                         <img src="Images/memory.jpg" alt="90s music memory game">
                     </picture>
                     <div class="btns">
-                        <button class="btn">
-                            <a href="https://github.com/ceciCoding/90s-Music-Memory-Game" target="_blank">See Code</a>
-                         </button>
-                        <button class="btn">
-                            <a href="https://cecicoding.github.io/90s-Music-Memory-Game/" target="_blank">Live Demo</a>
-                        </button>
+                            <a href="https://github.com/ceciCoding/90s-Music-Memory-Game" target="_blank"><button class="btn">See Code</button></a>
+                            <a href="https://cecicoding.github.io/90s-Music-Memory-Game/" target="_blank"><button class="btn">Live Demo</button></a>
                     </div>
                 </div>
             </article>
@@ -111,13 +106,8 @@
                         <img src="Images/donuts.jpg" alt="90s music memory game">
                     </picture>
                     <div class="btns">
-                        <button class="btn">
-                            <a href="https://github.com/ceciCoding/Donuts-store
-                            " target="_blank">See Code</a>
-                         </button>
-                        <button class="btn">
-                            <a href="https://distracted-jones-f12625.netlify.app/index.html" target="_blank">Live Demo</a>
-                        </button>
+                            <a href="https://github.com/ceciCoding/Donuts-store" target="_blank"><button class="btn">See Code</button></a>
+                            <a href="https://distracted-jones-f12625.netlify.app/index.html" target="_blank"><button class="btn">Live Demo</button></a>
                     </div>
                 </div>
             </article>
@@ -138,9 +128,7 @@
                         <img src="Images/fatland.jpg" alt="90s music memory game">
                     </picture>
                     <div class="btns">
-                        <button class="btn">
-                            <a href="https://fatlandcreaciones.com/" target="_blank">See Website</a>
-                        </button>
+                            <a href="https://fatlandcreaciones.com/" target="_blank"><button class="btn">See Website</button></a>
                     </div>
                 </div>
             </article>
@@ -159,14 +147,16 @@
             <div class="title">
                 <h1>contact</h1>
             </div>
-                <form class="cont-form" action="POST">
+                <form class="cont-form" action="POST" data-netlify="true">
+                    <p>Get in touch!</p>
                     <label for="name" aria-placeholder="Name" placeholder="name">Name</label>
                     <input type="text" name="name">
                     <label for="email">Email</label>
                     <input type="email" name="email">
                     <label for="message">Message</label>
                     <textarea name="message" id="" cols="30" rows="6"></textarea>
-                    <input type="file" name="file">
+                    <input type="file" name="file" placeholder="upload file">
+                    <div data-netlify-recaptcha="true"></div>
                     <button class="btn" type="submit">Send</button>
                 </form>
         </section>
