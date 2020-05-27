@@ -291,6 +291,7 @@ Media queries
     .content {
         margin-bottom: 2rem;
     }
+
 }
 
 @media screen and (max-width: 1095px) {
