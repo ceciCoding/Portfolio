@@ -149,12 +149,12 @@
             </div>
                 <form class="cont-form" action="POST" data-netlify="true">
                     <p>Get in touch!</p>
-                    <label for="name" aria-placeholder="Name" placeholder="name">Name</label>
-                    <input type="text" name="name">
+                    <label for="name" placeholder="name">Name</label>
+                    <input type="text" name="name" onclick="this.focus();this.select()">
                     <label for="email">Email</label>
-                    <input type="email" name="email">
+                    <input type="email" name="email" onclick="this.focus();this.select()">
                     <label for="message">Message</label>
-                    <textarea name="message" id="" cols="30" rows="6"></textarea>
+                    <textarea name="message" id="" cols="30" rows="6" onclick="this.focus();this.select()"></textarea>
                     <input type="file" name="file" placeholder="upload file">
                     <div data-netlify-recaptcha="true"></div>
                     <button class="btn" type="submit">Send</button>
