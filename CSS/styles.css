@@ -223,6 +223,10 @@ Contact Form
     font-size: .8rem;
 }
 
+.captcha {
+    width: 80px;
+}
+
 
 /********************
 Social Navigation Bar
