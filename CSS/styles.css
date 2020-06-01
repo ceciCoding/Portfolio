@@ -25,6 +25,7 @@ tags and change box model to border-box
     font-family: var(--main-font);
     color: var(--main-white);
     background-color: var(--main-green);
+    width: 100vw;
 }
 
 body {
