@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@900&family=Open+Sans:wght@400;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/menu.css"> 
     <title>Cecilia Olivera - Web Developer</title>
 </head>
 <body>
@@ -13,71 +14,167 @@
             <li><a href="index.html">EN.</a></li>
             <li><a href="spanish.html">ES.</a></li>
         </ul>
-        <ul class="desk-nav">
+        <ul id="desk-nav">
             <li><a href="#about">sobre mí &nbsp;|</a></li>
             <li><a href="#projects">&nbsp; proyectos &nbsp;|</a></li>
-            <li>&nbsp; cv &nbsp;|</li>
-            <li>&nbsp; contacto</li>
+            <li><a href="#cv">&nbsp; cv &nbsp;|</a></li>
+            <li><a href="#contact">&nbsp; contacto</a></li>
         </ul>
+        <div id="menu-wraps">
+            <input type="checkbox" class="toggler"/>
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <ul class="burger-list">
+                        <li><a href="#about" class="burger-list-item">sobre mí</a></li>
+                        <li><a href="#projects" class="burger-list-item">proyectos</a></li>
+                        <li><a href="#cv" class="burger-list-item">cv</a></li>
+                        <li><a href="#contact" class="burger-list-item">contacto</a></li>
+                    </ul>
+                </div>
+            </div>
     </nav>
     <main>
         <section class="social">
-            <div class="linkedin"></div>
+            <a href="https://www.linkedin.com/in/cecilia-olivera-webdev/" target="_blank"><div class="linkedin"></div></a>
             <a href="https://github.com/ceciCoding" target="_blank"><div class="github"></div></a>
             <a href="https://twitter.com/cec1_c0d" target="_blank"><div class="twitter"></div></a>
-            <div class="email"></div>
+            <a href="#contact"><div class="email"></div></a>
         </section>
-        <section class="section about-me">
+        <section class="section about-me" id="about">
             <div class="title">
-                <h1>Sobre&nbsp;&nbsp;&nbsp;&nbsp;mi</h1>
+                <h1>sobre&nbsp;&nbsp;&nbsp;&nbsp;mi</h1>
             </div>
-            <article class="content" id="about">
+            <article class="content">
                 <picture class="hero">
                     <source srcset="Images/hero-mobile.jpg" media="(max-width: 750px)">
                     <img src="Images/hero.jpg" alt="picture of Cecilia Olivera, web dev">
                 </picture>
-                <p class="content-paragraph">¡Hola! Soy Cecilia Olivera, <strong>Desarroladora Frontend</strong>, entusiasta del diseño <strong>UX/UI</strong>  
-                y adoradora&nbsp;de&nbsp;gatos.</p>
-                <p> A principios de 2019 decidí que iba a dar un giro a mi vida, así que me embarqué a aprender ingeniería y diseño de software. 
-                Aprendí algo de programación cuando tenía unos doce años y ese pensamiento me ha acompañado a lo largo de la vida.
-                Entonces dejé mi trabajo y me dediqué a estudiar a tiempo completo. No me he arrepentido de ello ni una&nbsp;sola&nbsp;vez. <br>
-                Mis <strong>principales recursos</strong> han sido <a href="https://frontendmasters.com/" target="_blank">Frontend Masters</a>, 
+                <p class="content-paragraph">¡Hola! Soy Cecilia Olivera, <strong>Frontend Developer</strong>, entusiasta del diseño <strong>UX/UI</strong>  
+                y adoradora&nbsp;de&nbsp;gatos. </p>
+                <p>A principios de 2019 decidí que iba a darle un giro a mi vida, así que me embarqué a aprender ingeniería y diseño de software.
+                Aprendí algo de programación cuando tenía unos doce años y ese pensamiento me ha acompañado a lo largo de la vida. 
+                Entonces dejé mi trabajo y me dediqué a estudiar a tiempo completo. No me he arrepentido de ello ni una vez desde entonces.</p>
+                <p>Mis <strong>principales recursos</strong>  han sido <a href="https://frontendmasters.com/" target="_blank">Frontend Masters</a>, 
                 <a href="https://platzi.com/" target="_blank"> Platzi</a>, 
                 <a href="https://www.edx.org/course/cs50s-introduction-to-computer-science" target="_blank">CS50</a>, 
-                <a href="https://www.crehana.com/es/" target="_blank">Crehana,</a>  
-                <a href="https://zerotomastery.io/" target="_blank">Zero to Mastery</a>, <a href="https://javascript30.com/" target="_blank">Javascript30 </a> y miles de artículos, videos y foros que esta increíble comunidad&nbsp;
-                ha&nbsp;creado. </p>
-                <p> Estoy <strong>constantemente buscando cosas para aprender</strong>  y es muy importante para mí <strong>entender las cosas en profundidad.</strong> 
-                Por ello durante este tiempo me he centrado en aprender los fundamentos de las <strong> ciencias de la computación</strong>  y en adquirir <strong> 
-                buenos conocimientos de Javascript&nbsp;y&nbsp;CSS. </strong> <br>
-                <strong>Las buenas prácticas</strong>  y la <strong>accessibilidad</strong>  son también dos de mis preocupaciones. </p>
-                <!-- <p><strong>Mi objetivo</strong>  es trabajar para una compañía que me anime a aprender, me ayude a crecer como desarrolladora y 
-                se preocupe por la ética laboral. Estoy abierta a trabajar para cualqueir zona horaria.</p> -->
-                <p><strong>Otras cosas que disfruto</strong>  son la música, los juegos de mesa, la ciencia ficción, canales nerds de Youtube, concinar y cantar.</p>
+                <a href="https://zerotomastery.io/" target="_blank">Zero to Mastery</a>,&nbsp;<a href="https://javascript30.com/" target="_blank"> Javascript30</a> 
+                y miles de artículos, videos y foros que está increíble comunidad tiene para&nbsp;ofrecer. </p>
+               <p>Estoy <strong>constantemente buscando cosas nuevas que aprender</strong>  y es muy importante para mí <strong>entender las cosas en profundidad.</strong> 
+               Por ello durante este tiempo me he centrado en aprender los <strong>fundamentos de las ciencias de la computación</strong>  y en adquirir <strong> buenos conocimientos de CSS y&nbsp;Javascript. </strong> </p>
+               <p><strong>Las buenas prácticas</strong> y <strong>la accesibilidad</strong> son también dos de mis&nbsp;preocupaciones.</p>
+               <p><strong>Otras cosas que disfruto</strong>  son la música, los juegos de mesa, la ciencia ficción, canales nerd de Youtube, cocinar&nbsp;y&nbsp;cantar.</p>
             </article> 
         </section>
-        <section class="section projects" >
+        <section class="section projects" id="projects">
             <div class="title" >
-                <h1>Proyectos</h1>
+                <h1>proyectos</h1>
             </div>
-            <article class="content" id="projects">
-                <p>Lorstrong ipsum dolor sit, amet consectetur adipisicing elit. Possimus, nam ratione inventore velit facilis animi illum quod, nisi eaque nstrongo error, ullam quae omnis ipsa. Aperiam rerum nobis ipsam nstrongo?
-                Ab nostrum beatae placeat, earum culpa unde fugit deleniti, ex quia consectetur ullam impedit quibusdam cumque. Molestiae necessitatibus nam dolorum porro similique, harum blanditiis, quaerat doloribus, nesciunt tstrongporibus nulla alias!
-                Dolore esse nulla corporis dolor deserunt magni odio? Esse beatae dolorum hic, amet reiciendis quisquam odit nulla harum alias atque soluta deleniti assumenda ipsum corporis numquam voluptates. Voluptates, placeat cumque!
-                Magnam tstrongpore voluptate ipsum autstrong, consectetur officiis quasi suscipit minus ut est, assumenda vel dignissimos ex eum itaque, modi quod odit dolorstrong repudiandae! Provident reiciendis adipisci itaque vel, eum ipsam!
-                Libero veniam laborum, molestiae commodi aperiam veritatis iste facere iure. Unde eos debitis fugit reprehenderit? Iste, et rstrong. Cum rstrong maxime autstrong facilis deleniti omnis natus nisi enim placeat tstrongpora.
-                In impedit nihil sed veniam! Neque eos ullam molestias deserunt dolore perferendis rerum distinctio odit eum. Reprehenderit quisquam omnis eligendi, nam sit modi soluta corporis ex, saepe, non aperiam veniam!
-                Lorstrong ipsum dolor sit, amet consectetur adipisicing elit. Dolores nostrum, unde suscipit perferendis repellat quasi, veritatis dolor, aliquam sint officia maxime. Omnis exercitationstrong dolor officia possimus repudiandae aspernatur debitis qui.
-                Suscipit expedita tstrongpora explicabo totam repellat pariatur aut et, laudantium quam distinctio optio vero eveniet facilis fugiat a corrupti natus omnis ducimus enim, ex voluptates! Labore suscipit veniam aliquam rerum?
-                Quis debitis inventore mollitia eaque pariatur unde minima laboriosam voluptatstrong consequatur tstrongpora neque in perspiciatis odio sint tstrongporibus, omnis nstrongo ab expedita beatae quisquam aut dolorstrongque blanditiis impedit! Veniam, quod!
-                Molestiae nihil fuga ut, sed autstrong laborum ipsa in perferendis nisi quas porro. Dignissimos et laborum culpa dolorum quasi animi cupiditate mollitia repudiandae dolore cumque deserunt, est labore quia rerum.
-                Dolorstrongque voluptatum obcaecati quaerat tenetur amet, est commodi nesciunt atque quia explicabo error quibusdam a consectetur eligendi dicta perferendis consequuntur architecto! Omnis, dignissimos iusto optio facilis natus repellat soluta officiis.
-                Voluptates qui vitae sed ut perferendis aut nam, quae amet ex, minus itaque recusandae quod at facere ipsam ducimus officiis, alias fugit neque id magnam nisi? Doloribus dignissimos veritatis aut!
-                Ea earum ad fugiat aperiam quisquam perspiciatis, tstrongpora provident facere nihil molestias. Tstrongpora laborum odio nostrum quis, natus, nam a sunt quas, dignissimos consequuntur ratione. Veniam culpa exercitationstrong quo ipsum.
-                Accusantium ea voluptate expedita quod! Qui ex incidunt recusandae quas error, aut assumenda reprehenderit voluptate omnis natus ipsa asperiores, neque facilis sint perspiciatis praesentium saepe soluta alias est eum? Pariatur?
-                Provident, maxime obcaecati assumenda et similique reiciendis nam commodi. Ea esse dolorum sed, accusantium ex suscipit doloribus inventore alias. Quasi ut illum facere culpa saepe dolorum molestias suscipit dolores eius.
-                Nesciunt in accusamus odit reprehenderit repudiandae, eveniet consequatur eligendi cum non qui, labore eius natus unde. Officia, vel non. Placeat impedit quos provident sed magni earum esse ratione a ab.</p>
+            <article class="content project">
+                <div>
+                <h3>Fatland Creaciones</h3>
+                <p class="content-paragraph">
+                    Fatland Creaciones es un eCommerce responsive desarrollado con
+                    <strong>Wordpress</strong> y <strong>Woocommerce</strong> 
+                    para esta marca de ropa vegana hecha a mano. <br>
+                    También está optimizada para <strong>SEO</strong>. 
+                </p>
+   
+                </div>
+                <div class="container">
+                    <picture>
+                        <source srcset="/Images/fatland-small.jpg"  media="(max-width: 750px)">
+                        <img src="Images/fatland.jpg" alt="90s music memory game">
+                    </picture>
+                    <div class="btns">
+                            <a href="https://fatlandcreaciones.com/" target="_blank"><button class="btn">Ver &nbsp;Sitio</button></a>
+                    </div>
+                </div>
             </article>
+            <article class="content project">
+                <div>
+                <h3>Donuts Heaven</h3>
+                <p class="content-paragraph">
+                    Donuts Heaven es una simulación de un <strong>eCommerce</strong> de donuts <strong>responsive</strong> </p>
+                    <p>Está completamente desarrollada con <strong>CSS</strong> y <strong>Javascript</strong>. </p>
+                </p>
+                </div>
+                <div class="container">
+                    <picture>
+                        <source srcset="/Images/donuts-small.jpg"  media="(max-width: 750px)">
+                        <img src="Images/donuts.jpg" alt="90s music memory game">
+                    </picture>
+                    <div class="btns">
+                            <a href="https://github.com/ceciCoding/Donuts-store" target="_blank"><button class="btn">Ver Código</button></a>
+                            <a href="https://donutsheaven.netlify.app/" target="_blank"><button class="btn">Live Demo</button></a>
+                    </div>
+                </div>
+            </article>
+            <article class="content project">
+                <div>
+                <h3>90s Music Memory Game</h3>
+                <p class="content-paragraph">
+                    Este es un juego de memoria responsive con una <strong>UI que simula un equipo de música de los 90.</strong></p>
+                    <p> Cada celda es un disco que me gusta, y cada vez que aciertas suena una canción del disco correspondiente.</p>
+                    <p>Está desarrollado con vanilla <strong>Javascript</strong> y <strong>CSS</strong>. </p>
+                </p>
+                </div>
+                <div class="container">
+                    <picture>
+                        <source srcset="/Images/memory-small.jpg"  media="(max-width: 750px)">
+                        <img src="Images/memory.jpg" alt="90s music memory game">
+                    </picture>
+                    <div class="btns">
+                            <a href="https://github.com/ceciCoding/90s-Music-Memory-Game" target="_blank"><button class="btn">Ver Código</button></a>
+                            <a href="https://cecicoding.github.io/90s-Music-Memory-Game/" target="_blank"><button class="btn">Live Demo</button></a>
+                    </div>
+                </div>
+            </article>
+            <article class="content project">
+                <div>
+                <h3>Este portfolio</h3>
+                <p class="content-paragraph">
+                    Este portfolio está completamente desarrollado con <strong>CSS</strong>. Usa muy poco <strong>Javascript</strong> y es totalmente responsive. 
+                </p>
+                <p>También respeta el ratio de contraste para <strong>a11y</strong> y tiene los atributos necesarios para <strong>Aria</strong>.</p>
+                </div>
+                <div class="container">
+                    <picture>
+                        <source srcset="/Images/portfolio-small.jpg"  media="(max-width: 750px)">
+                        <img src="Images/portfolio.jpg" alt="90s music memory game">
+                    </picture>
+                    <div class="btns">
+                            <a href="https://github.com/ceciCoding/Portfolio" target="_blank"><button class="btn">Ver Código</button></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="section cv" id="cv">
+            <div class="title">
+                <h1>cv</h1>
+            </div>
+            <article class="content">
+                <p>
+                    Esto es un link para <a href=""><strong>ver mi cv</strong></a> y este para <a download href=""><strong>descargarlo.</strong></a>
+                </p>
+            </article>
+        </section>
+        <section class="section contact" id="contact">
+            <div class="title">
+                <h1>contacto</h1>
+            </div>
+                <form class="cont-form" action="POST" data-netlify="true">
+                    <p>¡Ponte en contacto conmigo!</p>
+                    <label for="name" placeholder="name">Nombre</label>
+                    <input type="text" name="name" onclick="this.focus();this.select()">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" onclick="this.focus();this.select()">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="" cols="30" rows="6" onclick="this.focus();this.select()"></textarea>
+                    <input type="file" name="file" placeholder="upload file">
+                    <div data-netlify-recaptcha="true"></div>
+                    <button class="btn" type="submit">Enviar</button>
+                </form>
         </section>
     </main>
     <script src="script.js"></script>

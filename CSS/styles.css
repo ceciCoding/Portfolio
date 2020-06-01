@@ -76,6 +76,16 @@ Main Navigation Bar
     color: var(--main-white);
 }
 
+.logo {
+    position: absolute;
+    width: 40px;
+    left: 40px;
+    top: 1.5rem;
+}
+
+/************
+Main content
+*************/
 main {
     display: grid;  
     grid-template-columns: 10% 80% 10%;  
@@ -127,7 +137,7 @@ strong {
     grid-column: 2/3;
     display: block;
     clear: both;
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
 }
 
 .hero {
@@ -170,10 +180,6 @@ strong {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
-}
-
-.btn a {
-    text-decoration: none;
     font-size: .8rem;
 }
 
@@ -215,6 +221,10 @@ Contact Form
     align-self: center;
     width: 6rem;
     font-size: .8rem;
+}
+
+.captcha {
+    width: 80px;
 }
 
 
@@ -279,12 +289,13 @@ Media queries
     }
 
     .section {
-        margin-bottom: 1.5rem;
+        margin-bottom: 3rem;
     }
 
     .content {
-        margin-bottom: 2rem;
+        margin-bottom: 3.5rem;
     }
+
 }
 
 @media screen and (max-width: 1095px) {
@@ -299,3 +310,14 @@ Media queries
         margin: 0 auto;
     }
 }  
+
+@media (min-width: 550px) and (max-width: 750px) {
+    .main-nav {
+        height: 8rem;
+    }
+
+    .social,
+    .title {
+        top: 8rem;
+    }
+}
