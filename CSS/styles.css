@@ -296,6 +296,10 @@ Media queries
         margin-bottom: 3.5rem;
     }
 
+     .hero {
+        width: 100px;
+    }
+
 }
 
 @media screen and (max-width: 1095px) {
