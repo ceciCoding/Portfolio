@@ -4,8 +4,8 @@ tags and change box model to border-box
 ****************************************/
 * {
     box-sizing: border-box;
-    padding: 0;
     border: 0;
+    padding: 0;
 }
 
 *::before,
@@ -14,73 +14,73 @@ tags and change box model to border-box
 }
 
 :root {
-    box-sizing: border-box;
-    margin: 0;
-    --main-green: #699990;
-    --main-white: #FFF5FF;
-    --main-grey: rgba(0,0,0,.6);
-    --menu-speed: 0.75s;
     --main-font: 'Open Sans', sans-serif;
+    --main-green: #699990;
+    --main-grey: rgba(0,0,0,.6);
+    --main-white: #FFF5FF;
+    --menu-speed: 0.75s;
     --secondary-font: 'Coustard', serif;
-    font-family: var(--main-font);
-    color: var(--main-white);
     background-color: var(--main-green);
+    box-sizing: border-box;
+    color: var(--main-white);
+    font-family: var(--main-font);
+    margin: 0;
 }
 
 body {
     margin: 0 auto;
-    padding: 0;
     max-width: 85%;
+    padding: 0;
 }
 
 h3 {
-    margin-top: 0;
+    color: var(--main-grey);
     font-family: var(--secondary-font);
     font-weight: 400;
-    color: var(--main-grey);
+    margin-top: 0;
 }
 
 /******************
 Main Navigation Bar
 *******************/
 .main-nav {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    background-color: var(--main-green);
+    display: flex;
+    height: 12rem;
+    justify-content: center;
+    margin-left: -2rem;
     position: sticky;   
     top: 0;
-    height: 12rem;
-    background-color: var(--main-green);
     z-index: 3;
-    margin-left: -2rem;
 }
 
 .main-nav ul {
-    list-style: none;
-    font-family: var(--main-font);
     display: flex;
+    font-family: var(--main-font);
     font-size: 1.3rem;
-    position: sticky;
+    list-style: none;
     padding: 0;
+    position: sticky;
 }
 
 .main-nav > ul:first-of-type {
     position: absolute;
-    top: .5rem;
     right: 0; 
+    top: .5rem;
 } 
 
 
 .main-nav a {
-    text-decoration: none;
     color: var(--main-white);
+    text-decoration: none;
 }
 
 .logo {
-    position: absolute;
-    width: 40px;
     left: 40px;
+    position: absolute;
     top: 1.5rem;
+    width: 40px;
 }
 
 /************
@@ -93,28 +93,28 @@ main {
 }
 
 .title {
-    position: sticky;
-    top: 12rem;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    align-self: flex-start; 
-    margin-top: .5rem; 
-    margin-right: .8rem;
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
+    align-self: flex-start; 
+    display: flex;
     font-family: var(--secondary-font);
     font-size: 2rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-content: flex-end;
+    margin-right: .8rem;
+    margin-top: .5rem; 
+    position: sticky;
+    top: 12rem;
 }
 
 .title h1 {  
-    writing-mode: vertical-rl;
     transform: rotate(180deg);
+    writing-mode: vertical-rl;
 }
 
 .section {
-    grid-column: 1/3;
     display: grid;
+    grid-column: 1/3;
     grid-template-columns: 10% 90%;
     grid-template-rows: auto;
     line-height: 1.8rem;
@@ -134,18 +134,18 @@ strong {
 }
 
 .content {
-    grid-column: 2/3;
     display: block;
     clear: both;
+    grid-column: 2/3;
     margin-bottom: 7rem;
 }
 
 .hero {
-    clip-path: circle();
     -webkit-clip-path: circle();
-    shape-outside: circle(); 
+    clip-path: circle();
     float: left;
     margin: 0 1.5rem 1.5rem 0;
+    shape-outside: circle(); 
 }
 
 .content-paragraph  {
@@ -154,8 +154,8 @@ strong {
 }
 
 .projects img {
-    margin: 0.5rem 1.5rem;
     border: 1px solid var(--main-white);
+    margin: 0.5rem 1.5rem;
 }
 
 .project {
@@ -163,24 +163,23 @@ strong {
 }
 
 .container {
-    display: flex;
-    flex-shrink: 1;
-    flex-flow: column nowrap;
     align-items: center;  
+    display: flex;
+    flex-flow: column nowrap;
+    flex-shrink: 1;
     margin-bottom: 2rem;  
 }
 
 .btn {
     background-color: var(--main-grey);
-    color: inherit;
-    /* border: 2px solid var(--main-white); */
-    padding: .7rem;
     border-radius: 5px;
-    margin: .5rem;
+    color: inherit;
     cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
     font-size: .8rem;
+    font-weight: bold;
+    margin: .5rem;
+    padding: .7rem;
+    text-transform: uppercase;
 }
 
 #menu-wraps {
@@ -195,9 +194,9 @@ strong {
 Contact Form
 *************/
 .cont-form {
+    align-items: flex-start;
     display: flex;
     flex-flow: column nowrap;
-    align-items: flex-start;
     grid-column: 2/3;
     max-width: 75%;
     margin: 0 auto;
@@ -205,14 +204,14 @@ Contact Form
 
 .cont-form > input,
 .cont-form textarea {
-    padding: .5rem;
-    margin-bottom: .5rem;
-    margin-top: 0;
     background-color: transparent;
     border: 2px solid var(--main-white);
     border-radius: 5px;
     color: inherit;
     font-family: inherit;
+    margin-bottom: .5rem;
+    margin-top: 0;
+    padding: .5rem;
     width: 100%;
 }
 
@@ -223,8 +222,8 @@ Contact Form
 
 .cont-form .btn {
     align-self: center;
-    width: 6rem;
     font-size: .8rem;
+    width: 6rem;
 }
 
 .captcha {
@@ -236,13 +235,13 @@ Contact Form
 Social Navigation Bar
 *********************/
 .social {
-    position: sticky;
-    top: 12rem;
-    grid-column: 3/4;
     display: flex;
     flex-flow: column nowrap;
+    grid-column: 3/4;
     justify-self: flex-end;
     margin-top: .5rem;
+    position: sticky;
+    top: 12rem;
 }
 
 .linkedin {
@@ -262,10 +261,10 @@ Social Navigation Bar
 }
 
 .social div {
-    width: 40px;
-    height: 40px;
     background-repeat: no-repeat;
+    height: 40px;
     margin-bottom: 1.5rem;
+    width: 40px;
 }
 
 /************
@@ -273,14 +272,14 @@ Media queries
 *************/
 @media screen and (max-width: 800px) {
     .social div {
-        width: 30px;        
         margin-bottom: .8rem;
+        width: 30px;        
     }
 
     .title {
         font-size: 1.3rem;
-        margin-right: 20px;
         justify-content: center;
+        margin-right: 20px;
     }
 
     #desk-nav {
@@ -314,8 +313,8 @@ Media queries
 
 @media (min-width: 1300px) {
     body{
-        max-width: 1080px;
         margin: 0 auto;
+        max-width: 1080px;
     }
 }  
 
