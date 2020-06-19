@@ -187,6 +187,11 @@ strong {
     display: none;
 }
 
+.skills {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
 /************
 Contact Form
 *************/
