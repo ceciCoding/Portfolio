@@ -15,11 +15,11 @@ tags and change box model to border-box
 
 :root {
     --main-font: 'Lato', sans-serif;
-    --main-green: #699990;
+    --secondary-font: 'Coustard', serif;
+    --main-green: #4B726B;
     --main-grey: rgba(0,0,0,.6);
     --main-white: #FFF5FF;
     --menu-speed: 0.75s;
-    --secondary-font: 'Coustard', serif;
     background-color: var(--main-green);
     box-sizing: border-box;
     color: var(--main-white);
