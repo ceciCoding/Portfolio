@@ -49,7 +49,7 @@ Main Navigation Bar
     display: flex;
     height: 12rem;
     justify-content: center;
-    margin-left: -2rem;
+    /* margin-left: -2rem; */
     position: sticky;   
     top: 0;
     z-index: 3;
@@ -74,7 +74,6 @@ Main Navigation Bar
 .main-nav a {
     color: var(--main-white);
     text-decoration: none;
-    font-weight: ;
 }
 
 .logo {
@@ -189,24 +188,6 @@ strong {
 
 .skills {
     font-weight: bold;
-<<<<<<< HEAD
-=======
-}
-
-.cookies {
-    position: sticky;
-    bottom: 10px;
-    background-color: var(--main-grey);
-    width: 100%;
-    height: 60px;
-    text-align: center;
-}
-
-.cookiesBtn {
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-
->>>>>>> d74f5247c0de5efbb7cb4e160c11aae9a070bdf1
 }
 
 /************
@@ -279,6 +260,14 @@ Social Navigation Bar
     background-image: url('../Icons/github.svg');
 }
 
+.behance {
+    background-image: url('../Icons/behance.svg');
+}
+
+.dev {
+    background-image: url('../Icons/dev.svg');
+}
+
 .social div {
     background-repeat: no-repeat;
     height: 40px;
@@ -290,9 +279,22 @@ Social Navigation Bar
 Media queries
 *************/
 @media screen and (max-width: 800px) {
-    .social div {
-        margin-bottom: .8rem;
-        width: 30px;        
+    .social {
+       display: none;      
+    }
+
+    .social-mobile {
+        display: flex;
+        width: 80%;
+        justify-content: space-evenly;
+        align-self: center;
+    }
+
+    .social-mobile div {
+    background-repeat: no-repeat;
+    height: 40px;
+    margin-top: 1.5rem;
+    width: 40px;
     }
 
     .title {
@@ -312,6 +314,7 @@ Media queries
 
     .section {
         margin-bottom: 3rem;
+        grid-column: 1/4;
     }
 
     .content {
@@ -320,6 +323,10 @@ Media queries
 
      .hero {
         width: 100px;
+    }
+
+    .email {
+        display: none;
     }
 }
 
