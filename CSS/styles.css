@@ -28,8 +28,8 @@ tags and change box model to border-box
 }
 
 body {
-    margin: 0 auto;
-    max-width: 85%;
+    /* margin: 0 auto; */
+    /* max-width: 85%; */
     padding: 0;
 }
 
@@ -53,6 +53,7 @@ Main Navigation Bar
     position: sticky;   
     top: 0;
     z-index: 3;
+    width:100%;
 }
 
 .main-nav ul {
@@ -62,6 +63,10 @@ Main Navigation Bar
     list-style: none;
     padding: 0;
     position: sticky;
+}
+
+.main-nav ul:first-of-type {
+    margin-right: 1em;
 }
 
 .main-nav > ul:first-of-type {
@@ -87,6 +92,8 @@ Main Navigation Bar
 Main content
 *************/
 main {
+    margin-left: 1em;
+    margin-right: 1em;
     display: grid;  
     grid-template-columns: 10% 80% 10%;  
     grid-template-rows: auto;
@@ -234,6 +241,7 @@ Contact Form
 /********************
 Social Navigation Bar
 *********************/
+
 .social {
     display: flex;
     flex-flow: column nowrap;
@@ -288,6 +296,7 @@ Media queries
         width: 80%;
         justify-content: space-evenly;
         align-self: center;
+        z-index: 6;
     }
 
     .social-mobile div {
