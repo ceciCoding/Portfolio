@@ -39,6 +39,7 @@
 
   #menu-wraps ul {
       flex-flow: column nowrap;
+      margin-top: 2em;
   }
 
   #menu-wraps li {
@@ -107,7 +108,7 @@
       background: var(--main-white);
       display: flex;
       flex: none;
-      height: 300px;
+      height: 350px;
       justify-content: center;
       transition: transform .4s ease;
       transform: translate(-100%, 0);
