@@ -205,7 +205,7 @@ Contact Form
     display: flex;
     flex-flow: column nowrap;
     grid-column: 2/3;
-    max-width: 75%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -361,6 +361,14 @@ Media queries
 
     #footer-nav span {
         font-size: .5em;
+    }
+
+    #contact {
+        margin-bottom: 6em;
+    }
+
+    .cont-form {
+        max-width: 100%;
     }
 }
 
