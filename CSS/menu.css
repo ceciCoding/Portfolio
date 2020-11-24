@@ -12,7 +12,7 @@
   }
 
   #menu-wraps .toggler {
-      background-color: var(--main-green);
+      background-color: var(--main-black);
       cursor: pointer;
       height: 50px;
       left: .5rem;
@@ -39,6 +39,7 @@
 
   #menu-wraps ul {
       flex-flow: column nowrap;
+      margin-top: 2em;
   }
 
   #menu-wraps li {
@@ -46,7 +47,7 @@
   }
 
   #menu-wraps a {
-      color: var(--main-green);
+      color: var(--main-black);
   }
 
   /**************
@@ -107,7 +108,7 @@
       background: var(--main-white);
       display: flex;
       flex: none;
-      height: 300px;
+      height: 350px;
       justify-content: center;
       transition: transform .4s ease;
       transform: translate(-100%, 0);

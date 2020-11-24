@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/menu.css"> 
-    <title>Cecilia Olivera - Web Developer</title>
+    <title>Cecilia Olivera - Frontend Developer</title>
 </head>
 <body>
     <nav class="main-nav">
@@ -15,11 +16,20 @@
             <li><a href="spanish.html">ES.</a></li>
         </ul>
         <ul id="desk-nav">
-            <li><a href="#about">sobre mí &nbsp;|</a></li>
-            <li><a href="#projects">&nbsp; proyectos &nbsp;|</a></li>
-            <li><a href="#cv">&nbsp; cv &nbsp;|</a></li>
-            <li><a href="#contact">&nbsp; contacto</a></li>
+            <li><a href="#about">sobre mí</a></li>
+            <li><a href="#projects">proyectos</a></li>
+            <!-- <li><a href="#writings">&nbsp; publicaciones &nbsp;|</a></li>
+            <li><a href="#cv">&nbsp; cv &nbsp;|</a></li> -->
+            <li><a href="#contact">contacto</a></li>
         </ul>
+        <section class="social-mobile">
+            <a href="https://www.linkedin.com/in/cecilia-olivera-webdev/" target="_blank"><div class="linkedin"></div></a>
+            <a href="https://github.com/ceciCoding" target="_blank"><div class="github"></div></a>
+            <a href="https://twitter.com/cec1_c0d" target="_blank"><div class="twitter"></div></a>
+            <a href="https://www.behance.net/ceciliaolivera" target="_blank"><div class="behance"></div></a>
+            <a href="https://dev.to/cec1_c0d" target="_blank"><div class="dev"></div></a>
+            <a href="#contact"><div class="email"></div></a>
+        </section>
         <div id="menu-wraps">
             <input type="checkbox" class="toggler"/>
             <div class="hamburger"><div></div></div>
@@ -28,6 +38,7 @@
                     <ul class="burger-list">
                         <li><a href="#about" class="burger-list-item">sobre mí</a></li>
                         <li><a href="#projects" class="burger-list-item">proyectos</a></li>
+                        <li><a href="#writing" class="burger-list-item">publicaciones</a></li>
                         <li><a href="#cv" class="burger-list-item">cv</a></li>
                         <li><a href="#contact" class="burger-list-item">contacto</a></li>
                     </ul>
@@ -39,6 +50,8 @@
             <a href="https://www.linkedin.com/in/cecilia-olivera-webdev/" target="_blank"><div class="linkedin"></div></a>
             <a href="https://github.com/ceciCoding" target="_blank"><div class="github"></div></a>
             <a href="https://twitter.com/cec1_c0d" target="_blank"><div class="twitter"></div></a>
+            <a href="https://www.behance.net/ceciliaolivera" target="_blank"><div class="behance"></div></a>
+            <a href="https://dev.to/cec1_c0d" target="_blank"><div class="dev"></div></a>
             <a href="#contact"><div class="email"></div></a>
         </section>
         <section class="section about-me" id="about">
@@ -61,26 +74,13 @@
                Por ello durante este tiempo me he centrado en aprender los <strong>fundamentos de las ciencias de la computación</strong>  y en adquirir <strong> buenos conocimientos de CSS y&nbsp;Javascript. </strong> </p>
                <p><strong>Las buenas prácticas</strong> y <strong>la accesibilidad</strong> son también dos de mis&nbsp;preocupaciones.</p>
                <p><strong>Otras cosas que disfruto</strong>  son la música, los juegos de mesa, la ciencia ficción, canales nerd de Youtube, cocinar&nbsp;y&nbsp;cantar.</p>
-               <br>
-                <p><strong><u>MIS SKILLS PRINCIPALES SON:</u></strong> </p>
-                <ul class="skills">
-                    <li>JavaScript</li>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                    <li>C</li>
-                    <li>WordPress</li>
-                    <li>Vue.js</li>
-                    <li>Diseño UX/UI</li>
-                    <li>OOP</li>
-                    <li>Git</li>                    
-                    <li>Accesibilidady</li>
-                    <li>SEO</li>
-                    <li>Analytics</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe XD</li>
-                    
-                </ul>
+               <div class="skills-container">
+                    <h3>Skills</h3>
+                    <div class="skills">
+                        <img src="./Images/skills.svg" alt="my skills">
+                        <img src="./Images/skills-mobile.svg" alt="my skills">
+                    </div>
+                </div>
             </article> 
         </section>
         <section class="section projects" id="projects">
@@ -138,30 +138,9 @@
                     </div>
                 </div>
             </article>
-            <article class="content project">
-                <div>
-                <h3>Este portfolio</h3>
-                <p class="content-paragraph">
-                    Este portfolio está completamente desarrollado con <strong>CSS</strong>. Usa muy poco <strong>Javascript</strong> y es totalmente responsive. 
-                </p>
-                <p>También respeta el ratio de contraste para <strong>a11y</strong> y tiene los atributos necesarios para <strong>Aria</strong>.</p>
-                </div>
-                <div class="container">
-                    <img src="Images/portfolio.jpg" alt="90s music memory game">
-                    <div class="btns">
-                            <a href="https://github.com/ceciCoding/Portfolio" target="_blank"><button class="btn">Ver Código</button></a>
-                    </div>
-                </div>
-            </article>
         </section>
-        <section class="section cv" id="cv">
-            <div class="title">
-                <h1>cv</h1>
-            </div>
-            <article class="content">
-                <p>
-        </section>
-            <div class="title">
+        <section class="section contact" id="contact">
+           <div class="title">
                 <h1>contacto</h1>
             </div>
                 <form class="cont-form" action="POST" data-netlify="true">
@@ -177,6 +156,28 @@
                 </form>
         </section>
     </main>
+    <footer id="footer-nav">
+        <div class="f-about">
+            <a href="#about"><i class="material-icons">person</i></a>
+            <span>sobre mí</span>
+        </div>
+        <div class="f-projects">
+            <a href="#projects"><i class="material-icons">work</i></a>
+            <span>proyectos</span>
+        </div>
+        <!-- <div class="f-writing">
+            <a href="#writing"><i class="material-icons">description</i></a>
+            <span>publicaciones</span>
+        </div>
+        <div class="f-cv">
+            <a href="#cv"><i class="material-icons">school</i></a>
+            <span>cv</span>
+        </div> -->
+        <div class="f-contact">
+            <a href="#contact"><i class="material-icons">email</i></a>
+            <span>email</span>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

@@ -14,13 +14,14 @@ tags and change box model to border-box
 }
 
 :root {
-    --main-font: 'Open Sans', sans-serif;
-    --main-green: #699990;
-    --main-grey: rgba(0,0,0,.6);
-    --main-white: #FFF5FF;
-    --menu-speed: 0.75s;
+    --main-font: 'Lato', sans-serif;
     --secondary-font: 'Coustard', serif;
-    background-color: var(--main-green);
+    --main-black: #141313;
+    --main-grey: #2A3D39;
+    --main-white: #FFF5FF;
+    --main-gradient: radial-gradient( circle farthest-corner at 10% 20%,  rgba(62,133,238,1) 1.1%, rgba(227,137,240,1) 43.7%, rgba(243,193,124,1) 89.7% );
+    --menu-speed: 0.75s;
+    background-color: var(--main-black);
     box-sizing: border-box;
     color: var(--main-white);
     font-family: var(--main-font);
@@ -28,13 +29,14 @@ tags and change box model to border-box
 }
 
 body {
-    margin: 0 auto;
-    max-width: 85%;
+    /* margin: 0 auto; */
+    /* max-width: 85%; */
     padding: 0;
+    margin: 0;
 }
 
-h3 {
-    color: var(--main-grey);
+h3, h2 {
+    color: var(--main-white);
     font-family: var(--secondary-font);
     font-weight: 400;
     margin-top: 0;
@@ -45,14 +47,15 @@ Main Navigation Bar
 *******************/
 .main-nav {
     align-items: center;
-    background-color: var(--main-green);
+    background-color: var(--main-black);
     display: flex;
     height: 12rem;
     justify-content: center;
-    margin-left: -2rem;
+    /* margin-left: -2rem; */
     position: sticky;   
     top: 0;
     z-index: 3;
+    width:100%;
 }
 
 .main-nav ul {
@@ -64,12 +67,29 @@ Main Navigation Bar
     position: sticky;
 }
 
+.main-nav ul:first-of-type {
+    margin-right: 1em;
+}
+
 .main-nav > ul:first-of-type {
     position: absolute;
     right: 0; 
     top: .5rem;
 } 
 
+#desk-nav {
+    width: 40%;
+    justify-content: space-between;
+}
+
+#desk-nav li {
+    border-bottom: 1px solid var(--main-gradient);
+    background: var(--main-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
 
 .main-nav a {
     color: var(--main-white);
@@ -87,24 +107,31 @@ Main Navigation Bar
 Main content
 *************/
 main {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
     display: grid;  
     grid-template-columns: 10% 80% 10%;  
     grid-template-rows: auto;
 }
 
 .title {
-    align-items: center;
     align-self: flex-start; 
-    display: flex;
+    justify-self: center;
     font-family: var(--secondary-font);
     font-size: 2rem;
+    display: flex;
     grid-column: 1/2;
     grid-row: 1/2;
+    align-items: center;
     justify-content: flex-end;
     margin-right: .8rem;
     margin-top: .5rem; 
     position: sticky;
     top: 12rem;
+    background: var(--main-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .title h1 {  
@@ -146,6 +173,7 @@ strong {
     float: left;
     margin: 0 1.5rem 1.5rem 0;
     shape-outside: circle(); 
+    width: 150px;
 }
 
 .content-paragraph  {
@@ -153,9 +181,23 @@ strong {
     margin-top: 0;
 }
 
+.skills-container {
+    margin-top: 4rem;
+}
+
+.skills {
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+}
+
+.skills > img:last-of-type {
+    display: none;
+}
+
 .projects img {
-    border: 1px solid var(--main-white);
     margin: 0.5rem 1.5rem;
+    border-radius: 5px;
 }
 
 .project {
@@ -179,34 +221,12 @@ strong {
     font-weight: bold;
     margin: .5rem;
     padding: .7rem;
-    text-transform: uppercase;
 }
 
 #menu-wraps {
     display: none;
 }
 
-.skills {
-    font-weight: bold;
-<<<<<<< HEAD
-=======
-}
-
-.cookies {
-    position: sticky;
-    bottom: 10px;
-    background-color: var(--main-grey);
-    width: 100%;
-    height: 60px;
-    text-align: center;
-}
-
-.cookiesBtn {
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-
->>>>>>> d74f5247c0de5efbb7cb4e160c11aae9a070bdf1
-}
 
 /************
 Contact Form
@@ -216,7 +236,7 @@ Contact Form
     display: flex;
     flex-flow: column nowrap;
     grid-column: 2/3;
-    max-width: 75%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -252,6 +272,7 @@ Contact Form
 /********************
 Social Navigation Bar
 *********************/
+
 .social {
     display: flex;
     flex-flow: column nowrap;
@@ -278,6 +299,14 @@ Social Navigation Bar
     background-image: url('../Icons/github.svg');
 }
 
+.behance {
+    background-image: url('../Icons/behance.svg');
+}
+
+.dev {
+    background-image: url('../Icons/dev.svg');
+}
+
 .social div {
     background-repeat: no-repeat;
     height: 40px;
@@ -285,13 +314,31 @@ Social Navigation Bar
     width: 40px;
 }
 
+#footer-nav {
+    display: none;
+}
+
 /************
 Media queries
 *************/
 @media screen and (max-width: 800px) {
-    .social div {
-        margin-bottom: .8rem;
-        width: 30px;        
+    .social {
+       display: none;      
+    }
+
+    .social-mobile {
+        display: flex;
+        width: 80%;
+        justify-content: space-evenly;
+        align-self: center;
+        z-index: 6;
+    }
+
+    .social-mobile div {
+    background-repeat: no-repeat;
+    height: 40px;
+    margin-top: 1.5rem;
+    width: 40px;
     }
 
     .title {
@@ -304,6 +351,15 @@ Media queries
         display: none;
     }
 
+    .skills > img:first-of-type {
+        display: none;
+    }
+
+    .skills > img:last-of-type {
+        display: block;
+        width: 60%;
+    }
+
     .projects img {
         margin: 0;
         max-width: 100%;
@@ -311,6 +367,7 @@ Media queries
 
     .section {
         margin-bottom: 3rem;
+        grid-column: 1/4;
     }
 
     .content {
@@ -319,6 +376,40 @@ Media queries
 
      .hero {
         width: 100px;
+    }
+
+    .email {
+        display: none;
+    }
+
+    #footer-nav {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 60px;
+        background: var(--main-gradient);
+        position: fixed;
+        bottom: 0;
+    }
+
+    #footer-nav > * {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        color: var(--main-black);
+    }
+
+    #footer-nav span {
+        font-size: .5em;
+    }
+
+    #contact {
+        margin-bottom: 6em;
+    }
+
+    .cont-form {
+        max-width: 100%;
     }
 }
 

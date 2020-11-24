@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/menu.css"> 
-    <title>Cecilia Olivera - Web Developer</title>
+    <title>Cecilia Olivera - Frontend Developer</title>
 </head>
 <body>
     <nav class="main-nav">
@@ -14,12 +15,20 @@
             <li><a href="index.html">EN.</a></li>
             <li><a href="spanish.html">ES.</a></li>
         </ul>
-        <ul>
-            <li><a href="#about">about me &nbsp;|</a></li>
-            <li><a href="#projects">&nbsp; projects &nbsp;|</a></li>
-            <li><a href="#cv">&nbsp; cv - resume &nbsp;|</a></li>
+        <ul id="desk-nav">
+            <li><a href="#about">about me</a></li>
+            <li><a href="#projects">&nbsp; projects</a></li>
+            <!-- <li><a href="#writing">&nbsp; wirting</a></li> -->
             <li><a href="#contact">&nbsp; contact</a></li>
         </ul>
+        <section class="social-mobile">
+            <a href="https://www.linkedin.com/in/cecilia-olivera-webdev/" target="_blank"><div class="linkedin"></div></a>
+            <a href="https://github.com/ceciCoding" target="_blank"><div class="github"></div></a>
+            <a href="https://twitter.com/cec1_c0d" target="_blank"><div class="twitter"></div></a>
+            <a href="https://www.behance.net/ceciliaolivera" target="_blank"><div class="behance"></div></a>
+            <a href="https://dev.to/cec1_c0d" target="_blank"><div class="dev"></div></a>
+            <a href="#contact"><div class="email"></div></a>
+        </section>
         <div id="menu-wraps">
             <input type="checkbox" class="toggler"/>
             <div class="hamburger"><div></div></div>
@@ -28,6 +37,7 @@
                     <ul class="burger-list">
                         <li><a href="#about" class="burger-list-item">about me</a></li>
                         <li><a href="#projects" class="burger-list-item">projects</a></li>
+                        <li><a href="#writing" class="burger-list-item">writing</a></li>
                         <li><a href="#cv" class="burger-list-item">cv - resume</a></li>
                         <li><a href="#contact" class="burger-list-item">contact</a></li>
                     </ul>
@@ -39,6 +49,8 @@
             <a href="https://www.linkedin.com/in/cecilia-olivera-webdev/" target="_blank"><div class="linkedin"></div></a>
             <a href="https://github.com/ceciCoding" target="_blank"><div class="github"></div></a>
             <a href="https://twitter.com/cec1_c0d" target="_blank"><div class="twitter"></div></a>
+            <a href="https://www.behance.net/ceciliaolivera" target="_blank"><div class="behance"></div></a>
+            <a href="https://dev.to/cec1_c0d" target="_blank"><div class="dev"></div></a>
             <a href="#contact"><div class="email"></div></a>
         </section>
         <section class="section about-me" id="about">
@@ -47,42 +59,23 @@
             </div>
             <article class="content">
                 <img class="hero" src="Images/hero.jpg" alt="picture of Cecilia Olivera, web dev">
-                <p class="content-paragraph">Hi! I’m Cecilia Olivera, <strong>Frontend Developer</strong>, <strong>UX/UI</strong>  
-                enthusiast and worshiper&nbsp;of&nbsp;cats. </p>
-                <p>In early 2019 I decided I was going to make a life-changing twist, so I embarked on the journey of 
-                software engineering and design. I had programmed when I was around 12 and the thought of it has remained 
-                at the back of my mind for all these years. I quit my job and started studying full time. I haven’t 
-                regretted it once since&nbsp;then.</p>
-                <p>My <strong>main resources</strong>  have been <a href="https://frontendmasters.com/" target="_blank">Frontend Masters</a>, 
-                <a href="https://platzi.com/" target="_blank"> Platzi</a>, 
-                <a href="https://www.edx.org/course/cs50s-introduction-to-computer-science" target="_blank">CS50</a>, 
-                <a href="https://zerotomastery.io/" target="_blank">Zero to Mastery</a>,&nbsp;<a href="https://javascript30.com/" target="_blank"> Javascript30</a> and thousands of articles, videos and 
-                forums this great community has&nbsp;to&nbsp;offer. </p>
-               <p>I’m <strong>constantly craving to learn new stuff</strong>  and it’s very important to me to <strong>understand things deeply,</strong> so during this
-                time I’ve focused on learning <strong>computer science</strong>  foundations and having a <strong> good knowledge of Javascript&nbsp;and&nbsp;CSS. </strong> </p>
-                <strong>Good practices</strong>  and <strong>accessibility</strong>  are two of my concerns&nbsp;as&nbsp;well.</p>
-                <p><strong> Other things I enjoy</strong>  are music, board games, science fiction, nerd Youtube channels, cooking and&nbsp;singing.</p>
-
-                <br>
-                <p><strong><u>MY MAIN SKILLS ARE:</u></strong> </p>
-                <ul class="skills">
-                    <li>JavaScript</li>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                    <li>C</li>
-                    <li>WordPress</li>
-                    <li>Vue.js</li>
-                    <li>UX/UI Design</li>
-                    <li>OOP</li>
-                    <li>Git</li>                    
-                    <li>Accessibility</li>
-                    <li>SEO</li>
-                    <li>Analytics</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe XD</li>
-                    
-                </ul>
+                <p class="content-paragraph">Hello! I’m Cecilia Olivera, <strong>Fullstack Developer</strong> and <strong>UX/UI</strong>  
+                designer centered in Frontend. </p>
+                <p>Though I'm from Uruguay I've been living in Spain since I was a teenager in 2003, which has given me an insight into two
+                    similar yet different cultures.
+                </p>
+                <p>Learning new things is one of my favorite things in life. I believe anything can be interesting if it's well explained and I 
+                    always seek to find out how things are connected. I would love to bring my passion and commitment to a company
+                    or organization that has a social impact.
+                </p>
+                <p><strong> Other things I enjoy</strong>  are music, philosophy, social studies, board games, science fiction, nerd Youtube channels, cooking, singing and&nbsp;Fornite.</p>
+                <div class="skills-container">
+                    <h2>Skills</h2>
+                    <div class="skills">
+                        <img src="./Images/skills.svg" alt="my skills">
+                        <img src="./Images/skills-mobile.svg" alt="my skills">
+                    </div>
+                </div>
             </article> 
         </section>
         <section class="section projects" id="projects">
@@ -141,31 +134,6 @@
                     </div>
                 </div>
             </article>
-            <article class="content project">
-                <div>
-                <h3>This portfolio</h3>
-                <p class="content-paragraph">
-                    This portfolio is completely developed with <strong>CSS</strong>. It uses very little <strong>Javascript</strong> and it's totally responsive. 
-                </p>
-                <p>It also respects <strong>a11y</strong> contrast ratio and has the neccesary attributes for <strong>ARIA</strong>.</p>
-                </div>
-                <div class="container">
-                    <img src="Images/portfolio.jpg" alt="90s music memory game">
-                    <div class="btns">
-                            <a href="https://github.com/ceciCoding/Portfolio" target="_blank"><button class="btn">See Code</button></a>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="section cv" id="cv">
-            <div class="title">
-                <h1>cv</h1>
-            </div>
-            <article class="content">
-                <p>
-                    This is a link to <a href="/CV/cecilia-olivera-resume.pdf#page=1" target="_blank"><strong>see my resume</strong></a> and this to <a download href="CV/cecilia-olivera-resume.pdf"><strong>download it.</strong></a>
-                </p>
-            </article>
         </section>
         <section class="section contact" id="contact">
             <div class="title">
@@ -184,6 +152,28 @@
                 </form>
         </section>
     </main>
+    <footer id="footer-nav">
+        <div class="f-about">
+            <a href="#about"><i class="material-icons">person</i></a>
+            <span>about me</span>
+        </div>
+        <div class="f-projects">
+            <a href="#projects"><i class="material-icons">work</i></a>
+            <span>projects</span>
+        </div>
+        <!-- <div class="f-writing">
+            <a href="#writing"><i class="material-icons">description</i></a>
+            <span>writing</span>
+        </div> -->
+        <!-- <div class="f-cv">
+            <a href="#cv"><i class="material-icons">school</i></a>
+            <span>resume</span>
+        </div> -->
+        <div class="f-contact">
+            <a href="#contact"><i class="material-icons">email</i></a>
+            <span>email</span>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
