@@ -12,7 +12,7 @@
   }
 
   #menu-wraps .toggler {
-      background-color: var(--main-green);
+      background-color: var(--main-black);
       cursor: pointer;
       height: 50px;
       left: .5rem;
@@ -47,7 +47,7 @@
   }
 
   #menu-wraps a {
-      color: var(--main-green);
+      color: var(--main-black);
   }
 
   /**************
