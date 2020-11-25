@@ -133,6 +133,8 @@ main {
 .title h1 {  
     transform: rotate(180deg);
     writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
     background: var(--main-gradient);
     background-size: cover;
     -webkit-text-fill-color: transparent;
@@ -140,6 +142,7 @@ main {
     background-clip: text;
     padding: 0 1rem;
 }
+
 
 .section {
     display: grid;
