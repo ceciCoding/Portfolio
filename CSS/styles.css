@@ -208,11 +208,6 @@ strong {
     display: none;
 }
 
-.projects img {
-    margin: 0.5rem 1.5rem; 
-    /* border-radius: 5px; */
-} 
-
 .project {
     display: flex;
     gap: 1rem;
