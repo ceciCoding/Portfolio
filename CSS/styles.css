@@ -129,14 +129,17 @@ main {
     position: sticky;
     top: 12rem;
     background: var(--main-gradient);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 }
 
 .title h1 {  
     transform: rotate(180deg);
     writing-mode: vertical-rl;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .section {
