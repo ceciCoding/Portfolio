@@ -73,7 +73,7 @@ Main Navigation Bar
 
 .main-nav > ul:first-of-type {
     position: absolute;
-    right: 0; 
+    right: 3rem; 
     top: .5rem;
 } 
 
@@ -88,7 +88,7 @@ Main Navigation Bar
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+    font-size: 1.5rem;
 }
 
 .main-nav a {
@@ -204,9 +204,9 @@ strong {
 }
 
 .projects img {
-    /* margin: 0.5rem 1.5rem; */
-    border-radius: 5px;
-}
+    margin: 0.5rem 1.5rem; 
+    /* border-radius: 5px; */
+} 
 
 .project {
     display: flex;
@@ -287,7 +287,7 @@ Social Navigation Bar
     display: flex;
     flex-flow: column nowrap;
     grid-column: 3/4;
-    justify-self: flex-end;
+    justify-self: center;
     margin-top: .5rem;
     position: sticky;
     top: 12rem;
@@ -332,6 +332,10 @@ Social Navigation Bar
 Media queries
 *************/
 @media screen and (max-width: 800px) {
+    .main-nav > ul:first-of-type {
+        right: 0;
+    }
+
     .video {
         max-width: 100%;
         height: 250px;
@@ -417,7 +421,11 @@ Media queries
     }
 
     #footer-nav span {
-        font-size: .5em;
+        font-size: .6em;
+    }
+
+    .f-about .material-icons {
+        font-size: 1.8rem;
     }
 
     #contact {
