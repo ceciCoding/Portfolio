@@ -116,7 +116,7 @@ main {
 
 .title {
     align-self: flex-start; 
-    justify-self: center;
+    justify-self: flex-end;
     font-family: var(--secondary-font);
     font-size: 2rem;
     display: flex;
@@ -184,7 +184,7 @@ strong {
 .links-container {
     display: flex;
     flex-flow: column nowrap;
-    font-size: 1.1rem;
+    font-size: 1.1rem; 
     margin-top: 2rem;
     gap: .8rem;
 }
@@ -251,7 +251,7 @@ Contact Form
     display: flex;
     flex-flow: column nowrap;
     grid-column: 2/3;
-    max-width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -370,6 +370,7 @@ Media queries
         font-size: 1.3rem;
         justify-content: center;
         margin-right: 20px;
+        justify-self: center;
     }
 
     #desk-nav {
@@ -438,7 +439,7 @@ Media queries
     }
 
     .cont-form {
-        max-width: 100%;
+        width: 100%;
     }
 }
 

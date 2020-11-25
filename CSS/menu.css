@@ -108,11 +108,12 @@
       background: var(--main-white);
       display: flex;
       flex: none;
-      height: 350px;
+      height: 250px;
       justify-content: center;
       transition: transform .4s ease;
       transform: translate(-100%, 0);
       width: 230px;
+      z-index: 10;
   }
 
   #menu-wraps .menu > div > div {
