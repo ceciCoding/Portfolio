@@ -15,9 +15,9 @@ tags and change box model to border-box
 
 :root {
     --main-font: 'Montserrat', sans-serif;;
-    /* --secondary-font: 'Coustard', serif; */
-    --secondary-font: 'Bebas Neue', cursive;
+    --secondary-font: 'Bebas Neue', cursive; 
     --main-black: #201b1b;
+    --watermark-grey: #373737;
     --main-white: #FFF5FF;
     --main-gradient: radial-gradient( circle farthest-corner at 10% 20%,  rgba(62,133,238,1) 1.1%, rgba(227,137,240,1) 43.7%, rgba(243,193,124,1) 89.7% );
     --menu-speed: 0.75s;
@@ -36,11 +36,16 @@ body {
     margin: 0;
 }
 
-h3, h2 {
+h2 {
     color: var(--main-white);
     font-family: var(--secondary-font);
-    font-weight: bold;
+    font-size: 1.7rem;
     margin-top: 0;
+    letter-spacing: .3rem;
+}
+
+p {
+    color: #D7D7D7;
 }
 
 /******************
@@ -89,6 +94,7 @@ Main Navigation Bar
 .main-nav a {
     color: var(--main-white);
     text-decoration: none;
+    letter-spacing: .2rem;
 }
 
 .logo {
@@ -130,13 +136,9 @@ main {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     writing-mode: vertical-rl;
-    /* background: var(--main-gradient);
-    background-size: cover;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text; */
-    color: #626262;
+    color: var(--watermark-grey);
     padding: 0 1rem;
+    letter-spacing: .2rem;
 }
 
 
@@ -165,7 +167,7 @@ strong {
     display: block;
     clear: both;
     grid-column: 2/3;
-    margin: 0 2rem 4rem 2rem;
+    margin: 0 3rem 8rem 3rem;
 }
 
 .hero {
@@ -173,18 +175,25 @@ strong {
     clip-path: circle();
     float: left;
     margin: 0 1.5rem 1.5rem 0;
-    shape-outside: circle(); 
+    /* shape-outside: circle();  */
     width: 150px;
+}
+
+.hero + div > h2 {
+    font-family: var(--main-font);
+    font-size: 1.3rem;
+    letter-spacing: normal;
 }
 
 .links-container {
     display: flex;
     flex-flow: column nowrap;
     font-size: 1.1rem; 
+    font-weight: bold;
     margin-top: 2rem;
     gap: .8rem;
 }
-
+ 
 .content-paragraph  {
     padding-top: 0;
     margin-top: 0;
@@ -218,7 +227,7 @@ strong {
 }
 
 .btn {
-    background: var(--main-gradient);
+    background: var(--main-white);
     border-radius: 10px;
     color: var(--main-black);
     cursor: pointer;
@@ -283,7 +292,7 @@ Social Navigation Bar
     display: flex;
     flex-flow: column nowrap;
     grid-column: 3/4;
-    justify-self: center;
+    justify-self: flex-end;
     margin-top: .5rem;
     position: sticky;
     top: 10rem;
@@ -358,14 +367,10 @@ Media queries
     }
 
     .title {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         justify-content: center;
         margin-right: 20px;
         justify-self: center;
-    }
-
-    .title h1 {
-        letter-spacing: .1rem;
     }
 
     #desk-nav {
@@ -398,6 +403,10 @@ Media queries
 
      .hero {
         width: 100px;
+    }
+
+    .hero + div > h2 {
+        font-size: 1.1rem;
     }
 
     .email {
@@ -447,7 +456,7 @@ Media queries
 
 @media (min-width: 1300px) {
     body{
-        margin: 0 auto;
+        margin: auto 1rem;
         max-width: 1400px;
     }
 }  
