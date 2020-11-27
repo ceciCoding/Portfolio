@@ -87,8 +87,8 @@ Main Navigation Bar
 }
 
 #desk-nav li {
-    font-size: 1.3rem;
-    font-family: var(--secondary-font);
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .main-nav a {
@@ -108,8 +108,8 @@ Main Navigation Bar
 Main content
 *************/
 main {
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
     display: grid;  
     grid-template-columns: 10% 80% 10%;  
     grid-template-rows: auto;
@@ -337,6 +337,11 @@ Social Navigation Bar
 Media queries
 *************/
 @media screen and (max-width: 800px) {
+    main {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
     .main-nav > ul:first-of-type {
         right: 0;
     }
@@ -383,7 +388,6 @@ Media queries
 
     .skills > img:last-of-type {
         display: block;
-        width: 60%;
     }
 
     .projects img {
@@ -456,9 +460,10 @@ Media queries
 
 @media (min-width: 1300px) {
     body{
-        margin: auto 1rem;
+        margin: 0 auto;
         max-width: 1400px;
     }
+
 }  
 
 @media (min-width: 550px) and (max-width: 750px) {
