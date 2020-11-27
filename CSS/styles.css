@@ -14,10 +14,10 @@ tags and change box model to border-box
 }
 
 :root {
-    --main-font: 'Lato', sans-serif;
-    --secondary-font: 'Coustard', serif;
-    --main-black: #141313;
-    --main-grey: #2A3D39;
+    --main-font: 'Montserrat', sans-serif;;
+    /* --secondary-font: 'Coustard', serif; */
+    --secondary-font: 'Bebas Neue', cursive;
+    --main-black: #201b1b;
     --main-white: #FFF5FF;
     --main-gradient: radial-gradient( circle farthest-corner at 10% 20%,  rgba(62,133,238,1) 1.1%, rgba(227,137,240,1) 43.7%, rgba(243,193,124,1) 89.7% );
     --menu-speed: 0.75s;
@@ -26,6 +26,7 @@ tags and change box model to border-box
     color: var(--main-white);
     font-family: var(--main-font);
     margin: 0;
+    font-size: 1.1rem;
 }
 
 body {
@@ -38,7 +39,7 @@ body {
 h3, h2 {
     color: var(--main-white);
     font-family: var(--secondary-font);
-    font-weight: 400;
+    font-weight: bold;
     margin-top: 0;
 }
 
@@ -49,9 +50,8 @@ Main Navigation Bar
     align-items: center;
     background-color: var(--main-black);
     display: flex;
-    height: 12rem;
+    height: 10rem;
     justify-content: center;
-    /* margin-left: -2rem; */
     position: sticky;   
     top: 0;
     z-index: 3;
@@ -60,8 +60,7 @@ Main Navigation Bar
 
 .main-nav ul {
     display: flex;
-    font-family: var(--main-font);
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
     list-style: none;
     padding: 0;
     position: sticky;
@@ -83,12 +82,8 @@ Main Navigation Bar
 }
 
 #desk-nav li {
-    border-bottom: 1px solid var(--main-gradient);
-    background: var(--main-gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-family: var(--secondary-font);
 }
 
 .main-nav a {
@@ -118,7 +113,7 @@ main {
     align-self: flex-start; 
     justify-self: flex-end;
     font-family: var(--secondary-font);
-    font-size: 2rem;
+    font-size: 2.5rem;
     display: flex;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -127,7 +122,7 @@ main {
     margin-right: .8rem;
     margin-top: .5rem; 
     position: sticky;
-    top: 12rem;
+    top: 10rem;
 }
 
 .title h1 {  
@@ -135,11 +130,12 @@ main {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     writing-mode: vertical-rl;
-    background: var(--main-gradient);
+    /* background: var(--main-gradient);
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    background-clip: text;
+    background-clip: text; */
+    color: #626262;
     padding: 0 1rem;
 }
 
@@ -169,7 +165,7 @@ strong {
     display: block;
     clear: both;
     grid-column: 2/3;
-    margin-bottom: 7rem;
+    margin: 0 2rem 4rem 2rem;
 }
 
 .hero {
@@ -290,7 +286,7 @@ Social Navigation Bar
     justify-self: center;
     margin-top: .5rem;
     position: sticky;
-    top: 12rem;
+    top: 10rem;
 }
 
 .linkedin {
@@ -368,6 +364,10 @@ Media queries
         justify-self: center;
     }
 
+    .title h1 {
+        letter-spacing: .1rem;
+    }
+
     #desk-nav {
         display: none;
     }
@@ -392,6 +392,7 @@ Media queries
     }
 
     .content {
+        margin: 0;
         margin-bottom: 3.5rem;
     }
 
@@ -447,7 +448,7 @@ Media queries
 @media (min-width: 1300px) {
     body{
         margin: 0 auto;
-        max-width: 1080px;
+        max-width: 1400px;
     }
 }  
 
@@ -461,3 +462,6 @@ Media queries
         top: 8rem;
     }
 }
+
+
+
