@@ -171,7 +171,7 @@ strong {
     display: block;
     clear: both;
     grid-column: 2/3;
-    margin: 0 3rem 8rem 3rem;
+    margin: 0 3rem 6rem 3rem;
 }
 
 .hero {
@@ -395,7 +395,7 @@ Media queries
 
     .skills > img:last-of-type {
         display: block;
-        width: 70%;
+        width: 80%;
     }
 
     .projects img {
@@ -473,6 +473,10 @@ Media queries
 @media screen and (min-width: 700px) and (max-width: 1000px) {
     .skills {
         width: 65%;
+    }
+
+    .cont-form {
+        width: 70%;
     }
 }
 
