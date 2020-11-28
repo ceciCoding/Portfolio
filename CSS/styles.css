@@ -178,7 +178,7 @@ strong {
     -webkit-clip-path: circle();
     clip-path: circle(); 
     float: left;
-    margin: 0 1.5rem 1.5rem 0;
+    margin: 0 2rem 2rem 0;
     /* shape-outside: circle();  */
     width: 150px;
 }
@@ -219,6 +219,7 @@ strong {
 .project {
     display: flex;
     gap: 1rem;
+    margin-bottom: 3rem;
 }
 
 .container {
@@ -363,9 +364,10 @@ Media queries
     .social-mobile {
         display: flex;
         width: 80%;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-self: center;
         z-index: 6;
+        margin-left: 1.8rem;
     }
 
     .social-mobile div {
@@ -380,6 +382,7 @@ Media queries
         justify-content: center;
         margin-right: 20px;
         justify-self: center;
+        margin-top: 5.5rem;
     }
 
     #desk-nav {
@@ -461,9 +464,13 @@ Media queries
     .project {
         flex-flow: column nowrap ;
     }
+
+    .title {
+        justify-self: center;
+    }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1100px) {
+@media screen and (min-width: 700px) and (max-width: 1000px) {
     .skills {
         width: 65%;
     }
