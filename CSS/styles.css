@@ -398,8 +398,9 @@ Media queries
         width: 80%;
     }
 
-    .projects img {
+    #projects img {
         margin: 0;
+        margin-top: 30px;
         max-width: 100%;
     }
 
@@ -471,11 +472,11 @@ Media queries
 }
 
 @media screen and (min-width: 700px) and (max-width: 1000px) {
-    .skills {
-        width: 65%;
+    .cont-form {
+        width: 70%;
     }
 
-    .cont-form {
+    .skills {
         width: 70%;
     }
 }
@@ -488,7 +489,7 @@ Media queries
 
 }  
 
-@media (min-width: 550px) and (max-width: 750px) {
+@media (min-width: 550px) and (max-width: 800px) {
     .main-nav {
         height: 8rem;
     }
@@ -496,6 +497,10 @@ Media queries
     .social,
     .title {
         top: 8rem;
+    }
+
+    .skills {
+        width: 70%;
     }
 }
 
