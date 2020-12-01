@@ -484,7 +484,7 @@ Media queries
 
 }  
 
-@media (min-width: 550px) and (max-width: 750px) {
+@media (min-width: 550px) and (max-width: 800px) {
     .main-nav {
         height: 8rem;
     }
@@ -492,6 +492,10 @@ Media queries
     .social,
     .title {
         top: 8rem;
+    }
+
+    .skills {
+        width: 70%;
     }
 }
 
