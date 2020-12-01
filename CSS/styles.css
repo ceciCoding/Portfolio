@@ -398,8 +398,9 @@ Media queries
         width: 80%;
     }
 
-    .projects img {
+    #projects img {
         margin: 0;
+        margin-top: 30px;
         max-width: 100%;
     }
 
@@ -472,6 +473,10 @@ Media queries
 
 @media screen and (min-width: 700px) and (max-width: 1000px) {
     .cont-form {
+        width: 70%;
+    }
+
+    .skills {
         width: 70%;
     }
 }
